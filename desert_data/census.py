@@ -1,8 +1,10 @@
 #aa8ff91bc3aac3ccb123f8825fae47ec78d3adf1
 
-
-
-
+import numpy as np
+import pandas as pd
+X1 = pd.DataFrame([[1,1,1,1,1],[2,2,2,2,2]])
+X2 = pd.DataFrame([[1,1,1,1,1],[2,2,2,2,2]])
+xx1, yy1 = np.meshgrid(np.linspace((np.min(X1[0])) - 2, (np.max(X1[0]) + 2)), np.linspace((np.min(X1[-1])) - 2, (np.max(X1[-1]) + 2)))
 # referenceYear = 2013
 # periodCovered = 5 #year(s)
 # # This dictionary has the state's abreviation followed by the name as found in the download URL from the line above
